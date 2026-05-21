@@ -22,7 +22,7 @@ resources:
       cpu: 100m
       memory: 200Mi
 tests:
-- as: ocm-fvt-periodic-cs-rosa-hcp-backup-restore-integration-main
+- as: ocm-fvt-periodic-cs-rosa-hcp-backup-rest-integration-main
   capabilities:
   - nested-podman
   commands: |
@@ -67,7 +67,7 @@ tests:
   secrets:
   - mount_path: /usr/local/cs-qe-credentials
     name: cs-qe-credentials
-- as: ocm-fvt-periodic-cs-rosa-hcp-autoscaling-int-main
+- as: ocm-fvt-periodic-cs-rosa-hcp-backup-scale-integration-main
   capabilities:
   - nested-podman
   commands: |
@@ -112,7 +112,7 @@ tests:
   secrets:
   - mount_path: /usr/local/cs-qe-credentials
     name: cs-qe-credentials
-- as: ocm-fvt-periodic-cs-rosa-hcp-backup-autoscaling-2-int-main
+- as: ocm-fvt-periodic-cs-rosa-hcp-backup-scale-2-integration-main
   capabilities:
   - nested-podman
   commands: |
@@ -157,7 +157,7 @@ tests:
   secrets:
   - mount_path: /usr/local/cs-qe-credentials
     name: cs-qe-credentials
-- as: ocm-fvt-periodic-cs-rosa-hcp-backup-cp-upgrade-2-int-main
+- as: ocm-fvt-periodic-cs-rosa-hcp-backup-cp-up-2-integration-main
   capabilities:
   - nested-podman
   commands: |
@@ -202,7 +202,7 @@ tests:
   secrets:
   - mount_path: /usr/local/cs-qe-credentials
     name: cs-qe-credentials
-- as: ocm-fvt-periodic-cs-rosa-hcp-backup-cp-upgrade-int-main
+- as: ocm-fvt-periodic-cs-rosa-hcp-backup-cp-up-integration-main
   capabilities:
   - nested-podman
   commands: |
@@ -247,7 +247,7 @@ tests:
   secrets:
   - mount_path: /usr/local/cs-qe-credentials
     name: cs-qe-credentials
-- as: ocm-fvt-periodic-cs-rosa-hcp-backup-restore-2-int-main
+- as: ocm-fvt-periodic-cs-rosa-hcp-backup-rest-2-integration-main
   capabilities:
   - nested-podman
   commands: |
