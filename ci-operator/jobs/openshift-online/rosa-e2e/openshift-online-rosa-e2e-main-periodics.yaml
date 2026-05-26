@@ -879,7 +879,7 @@ periodics:
     ci.openshift.io/generator: prowgen
     job-release: "4.22"
     pj-rehearse.openshift.io/can-be-rehearsed: "true"
-  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-autoscaling-int-main
+  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-cp-up-2-integration-main
   spec:
     containers:
     - args:
@@ -887,7 +887,7 @@ periodics:
       - --image-import-pull-secret=/etc/pull-secret/.dockerconfigjson
       - --report-credentials-file=/etc/report/credentials
       - --secret-dir=/secrets/cs-qe-credentials
-      - --target=ocm-fvt-periodic-cs-rosa-hcp-autoscaling-int-main
+      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-cp-up-2-integration-main
       - --variant=ocm-fvt-rosa-hcp-integration
       command:
       - ci-operator
@@ -951,7 +951,7 @@ periodics:
     ci.openshift.io/generator: prowgen
     job-release: "4.22"
     pj-rehearse.openshift.io/can-be-rehearsed: "true"
-  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-autoscaling-2-int-main
+  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-cp-up-integration-main
   spec:
     containers:
     - args:
@@ -959,7 +959,7 @@ periodics:
       - --image-import-pull-secret=/etc/pull-secret/.dockerconfigjson
       - --report-credentials-file=/etc/report/credentials
       - --secret-dir=/secrets/cs-qe-credentials
-      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-autoscaling-2-int-main
+      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-cp-up-integration-main
       - --variant=ocm-fvt-rosa-hcp-integration
       command:
       - ci-operator
@@ -1023,7 +1023,7 @@ periodics:
     ci.openshift.io/generator: prowgen
     job-release: "4.22"
     pj-rehearse.openshift.io/can-be-rehearsed: "true"
-  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-cp-upgrade-2-int-main
+  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-rest-2-integration-main
   spec:
     containers:
     - args:
@@ -1031,7 +1031,7 @@ periodics:
       - --image-import-pull-secret=/etc/pull-secret/.dockerconfigjson
       - --report-credentials-file=/etc/report/credentials
       - --secret-dir=/secrets/cs-qe-credentials
-      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-cp-upgrade-2-int-main
+      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-rest-2-integration-main
       - --variant=ocm-fvt-rosa-hcp-integration
       command:
       - ci-operator
@@ -1095,7 +1095,7 @@ periodics:
     ci.openshift.io/generator: prowgen
     job-release: "4.22"
     pj-rehearse.openshift.io/can-be-rehearsed: "true"
-  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-cp-upgrade-int-main
+  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-rest-integration-main
   spec:
     containers:
     - args:
@@ -1103,7 +1103,7 @@ periodics:
       - --image-import-pull-secret=/etc/pull-secret/.dockerconfigjson
       - --report-credentials-file=/etc/report/credentials
       - --secret-dir=/secrets/cs-qe-credentials
-      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-cp-upgrade-int-main
+      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-rest-integration-main
       - --variant=ocm-fvt-rosa-hcp-integration
       command:
       - ci-operator
@@ -1167,7 +1167,7 @@ periodics:
     ci.openshift.io/generator: prowgen
     job-release: "4.22"
     pj-rehearse.openshift.io/can-be-rehearsed: "true"
-  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-restore-2-int-main
+  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-scale-2-integration-main
   spec:
     containers:
     - args:
@@ -1175,7 +1175,7 @@ periodics:
       - --image-import-pull-secret=/etc/pull-secret/.dockerconfigjson
       - --report-credentials-file=/etc/report/credentials
       - --secret-dir=/secrets/cs-qe-credentials
-      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-restore-2-int-main
+      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-scale-2-integration-main
       - --variant=ocm-fvt-rosa-hcp-integration
       command:
       - ci-operator
@@ -1239,7 +1239,7 @@ periodics:
     ci.openshift.io/generator: prowgen
     job-release: "4.22"
     pj-rehearse.openshift.io/can-be-rehearsed: "true"
-  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-restore-integration-main
+  name: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-scale-integration-main
   spec:
     containers:
     - args:
@@ -1247,7 +1247,7 @@ periodics:
       - --image-import-pull-secret=/etc/pull-secret/.dockerconfigjson
       - --report-credentials-file=/etc/report/credentials
       - --secret-dir=/secrets/cs-qe-credentials
-      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-restore-integration-main
+      - --target=ocm-fvt-periodic-cs-rosa-hcp-backup-scale-integration-main
       - --variant=ocm-fvt-rosa-hcp-integration
       command:
       - ci-operator
